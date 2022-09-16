@@ -2,7 +2,9 @@ Vue.createApp({
     data() {
         return {
             goals: [],
-            enteredValue: ''
+            enteredValue: '',
+            vueLink: 'https://vuejs.org/'
+
         };
     },
     methods: {

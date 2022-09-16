@@ -15,11 +15,65 @@
   <header>
     <h1>Vue Course Goals</h1>
   </header>
-  <section id="user-goal">
-    <h2>My Course Goal</h2>
-    <!-- <p>{{ outputGoal() }}</p> -->
-    <p v-html="outputGoal()"></p>
+  <!-- <section id="user-goal">
+    <h2>My Course Goal</h2> -->
+  <!-- <p>{{ outputGoal() }}</p> -->
+  <!-- <p v-html="outputGoal()"></p>
     <p>Learn more<a v-bind:href="vueLink">about Vue</a></p>
+  </section> -->
+
+  <!-- <h1> Vue Events </h1>
+  <section id="events">
+    <h2>Events in action</h2> -->
+  <!-- <button v-on:click="counter++">Add</button> -->
+  <!-- <button v-on:click="add(2)">Add</button> -->
+  <!-- <button v-on:click="counter--">Remove</button> -->
+  <!-- <button v-on:click.right="remove(2)">Remove</button>
+    <p v-once> Starting counter: {{ counter }}</p>
+    <p>Results: {{ counter }}</p> -->
+  <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'Kapoor')" v-on:keyup.enter="confirmedName"> -->
+  <!-- <input type="text" v-model="name">
+    <button v-on:click="resetInput">Reset Input</button>
+    <p>Your name: {{ fullName }}</p> -->
+  <!-- <p>Your name: {{ name }}</p> -->
+  <!-- <p> Your name: {{ confirmedName }}</p> -->
+  <!-- <form v-on:submit.prevent="submitForm">
+      <input type="text">
+      <button>Sign up</button>
+    </form> -->
+  <!-- </section> -->
+
+
+  <!--Dynamic Styling-->
+  <!-- <header>
+    <h1>Vue Dynamic Styling</h1>
+  </header>
+  <section id="styling"> -->
+  <!--:style="{borderColor: boxASelected ? 'red' : '#ccc'}"-->
+  <!--:class="boxASelected ? 'demo active' : 'demo'"-->
+  <!-- <div class="demo" :class="boxAClasses" @click="boxSelected('A')"></div>
+    <div :class="['demo', {active: boxBSelected}]" @click="boxSelected('B')"></div>
+    <div class="demo" :class="{active: boxCSelected}" @click="boxSelected('C')"></div>
+  </section> -->
+
+  <!--Rendering Conditional content-->
+  <section id="user-goals">
+    <h2>My course goals</h2>
+    <!--v-model="enteredGoalValue"-->
+    <input type="text" ref="userText" />
+    <button @click="addGoal">Add Goal</button>
+    <p v-if="goals.length === 0">No goals have been added yet - please start adding some!</p>
+    <ul v-else>
+      <li v-for="(goal,index) in goals" :key="goal" @click="removeGoal(index)">{{ goal }} - {{ index }}</li>
+    </ul>
+    <!-- <ul>
+      <li v-for="(value,key,index) in {name: 'Manvi', age: 31}">{{ key }}:{{ value }}</li>
+    </ul> -->
+    <!-- <ul>
+      <li v-for="num in 10">
+        {{ num }}
+      </li>
+    </ul> -->
   </section>
 </body>
 

@@ -39,6 +39,50 @@ header {
   margin: 0 0 1rem 0;
 }
 
+#user-goals ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+#user-goals li {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #8ddba4;
+  padding: 0.5rem;
+  color: #1f1f1f;
+  border-radius: 25px;
+}
+
+#user-goals input {
+  font: inherit;
+  border: 1px solid #ccc;
+}
+
+#user-goals input:focus {
+  outline: none;
+  border-color: #1b995e;
+  background-color: #d7fdeb;
+}
+
+#user-goals button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #ff0077;
+  background-color: #ff0077;
+  color: white;
+  padding: 0.05rem 1rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+#user-goals button:hover,
+#user-goals button:active {
+  background-color: #ec3169;
+  border-color: #ec3169;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
 #user-goal p {
   font-size: 1.25rem;
   font-weight: bold;
@@ -75,4 +119,81 @@ header {
   background-color: #ec3169;
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+#events {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 3rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  max-width: 40rem;
+}
+
+#events h2 {
+  font-size: 2rem;
+  border-bottom: 4px solid #ccc;
+  color: #4fc08d;
+  margin: 0 0 1rem 0;
+}
+
+#events p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 1px solid #4fc08d;
+  background-color: #4fc08d;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 25px;
+}
+
+#events input {
+  font: inherit;
+  border: 1px solid #ccc;
+}
+
+#events input:focus {
+  outline: none;
+  border-color: #1b995e;
+  background-color: #d7fdeb;
+}
+
+#events button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #ff0077;
+  background-color: #ff0077;
+  color: white;
+  padding: 0.05rem 1rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+  border-radius: 20px;
+  margin: 0 1rem;
+}
+
+#events button:hover,
+#events button:active {
+  background-color: #ec3169;
+  border-color: #ec3169;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+#styling {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 3rem;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.demo {
+  width: calc(100% - 32px);
+  height: 100px;
+  margin: 16px;
+  border: 2px dashed #ccc;
+}
+
+.active {
+  border-color: red;
+  background-color: salmon;
 }
